@@ -4,7 +4,7 @@
  * @see { @link https://vuepress.vuejs.org/zh/config }
  * @Date: 2019-08-13 18:50:23
  * @Last Modified by: wei.yafei 
- * @Last Modified time: 2019-08-13 20:38:53
+ * @Last Modified time: 2019-08-13 23:10:04
  */
 module.exports = {
   /*=============================================
@@ -115,7 +115,7 @@ module.exports = {
     /*=============================================
     =                Git 仓库和编辑链接              =
     =============================================*/
-    repo: "https://github.com/wsypower/press",
+    repo: "https://github.com/wsypower/VDOC",
     repoLabel: "查看源码",
     sidebarDepth: 3,
     displayAllHeaders: true, // 默认值：false

@@ -39,3 +39,8 @@
 ```
 
 [锚点链接](/example/#自定义容器)
+
+### 内部链接
+
+> 在 VuePress 内部，以.md 或者.html 结尾的文件，会被转换成<doc-color color="Danger">router-link</doc-color> 用于 SPA 导航，它是大小写敏感的。
+> 如果文件名为 README.md，它会被编译成 index.html，所以当我们访问/vuepress/时，其实就是在访问/vuepress/README.md 或者/vuepress/index.html
