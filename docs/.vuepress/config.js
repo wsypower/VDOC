@@ -3,8 +3,8 @@
  * @Author: wei.yafei
  * @see { @link https://vuepress.vuejs.org/zh/config }
  * @Date: 2019-08-13 18:50:23
- * @Last Modified by: wei.yafei 
- * @Last Modified time: 2019-08-13 23:10:04
+ * @Last Modified by: wei.yafei
+ * @Last Modified time: 2019-08-27 16:42:28
  */
 module.exports = {
   /*=============================================
@@ -143,7 +143,27 @@ module.exports = {
           { text: "内容3", link: "/JavaScript/" }
         ]
       },
-      { text: "首页1", link: "/Vue/" },
+      {
+        text: "源码分析",
+        items: [
+          {
+            text: "Vue",
+            items: [
+              { text: "Vue", link: "/sourceCode/vue/" },
+              { text: "Vux", link: "/xxxx" },
+              { text: "Vue-Router", link: "/xxxxxxx" }
+            ]
+          },
+          {
+            text: "React",
+            items: [
+              { text: "内容1", link: "/xxxxxx" },
+              { text: "内容2", link: "/xxxxx" },
+              { text: "内容3", link: "/xxxxxxxxx" }
+            ]
+          }
+        ]
+      },
       //下拉列表分组适用于下拉选项较多的情况
       {
         text: "首页2",
@@ -176,17 +196,18 @@ module.exports = {
      * @example 自动生成侧边栏
      * sidebar: 'auto',
      */
-    sidebar: [
-      {
-        title: "式例",
-        collapsable: false, //控制伸缩
-        children: ["/example/", "/CSS/", "/JavaScript/"]
-      },
-      {
-        title: "Vue.js",
-        collapsable: true,
-        children: ["/Vue/"]
-      }
-    ]
+    // sidebar: [
+    //   {
+    //     title: "vue源码分析",
+    //     collapsable: true, //控制伸缩
+    //     children: ["/sourceCode/vue/"]
+    //   }
+    //   // {
+    //   //   title: "Vue.js",
+    //   //   collapsable: true,
+    //   //   children: ["/Vue/"]
+    //   // }
+    // ]
+    sidebar: "auto"
   }
 };
