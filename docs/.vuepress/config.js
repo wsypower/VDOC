@@ -3,8 +3,8 @@
  * @Author: wei.yafei
  * @see { @link https://vuepress.vuejs.org/zh/config }
  * @Date: 2019-08-13 18:50:23
- * @Last Modified by: wei.yafei
- * @Last Modified time: 2019-08-27 16:42:28
+ * @Last Modified by: wei.yafei 
+ * @Last Modified time: 2019-08-28 15:54:32
  */
 module.exports = {
   /*=============================================
@@ -117,7 +117,7 @@ module.exports = {
     =============================================*/
     repo: "https://github.com/wsypower/VDOC",
     repoLabel: "查看源码",
-    sidebarDepth: 3,
+    sidebarDepth: 4,
     displayAllHeaders: true, // 默认值：false
     /*=============================================
     =       一个基本的导航栏链接可以配置成如下所示      =
@@ -149,8 +149,8 @@ module.exports = {
           {
             text: "Vue",
             items: [
-              { text: "Vue", link: "/sourceCode/vue/" },
-              { text: "Vux", link: "/xxxx" },
+              { text: "Vue", link: "/vue/" },
+              { text: "Vux", link: "/vuex/" },
               { text: "Vue-Router", link: "/xxxxxxx" }
             ]
           },
@@ -196,18 +196,23 @@ module.exports = {
      * @example 自动生成侧边栏
      * sidebar: 'auto',
      */
-    // sidebar: [
-    //   {
-    //     title: "vue源码分析",
-    //     collapsable: true, //控制伸缩
-    //     children: ["/sourceCode/vue/"]
-    //   }
-    //   // {
-    //   //   title: "Vue.js",
-    //   //   collapsable: true,
-    //   //   children: ["/Vue/"]
-    //   // }
-    // ]
-    sidebar: "auto"
+    sidebar: {
+      "/vue/": [
+        "prepare/flow",
+        "prepare/entrance",
+      ],
+      "/vuex/": [
+        "init" /* /bar/ */,
+        // "three" /* /bar/three.html */,
+        // "four" /* /bar/four.html */
+      ],
+
+      // fallback
+      "/": [
+        "" /* / */,
+        "contact" /* /contact.html */,
+        "about" /* /about.html */
+      ]
+    }
   }
 };

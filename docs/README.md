@@ -1,7 +1,7 @@
 ---
 home: true
 lang: zh-CN
-heroText: 天翼智慧城管说明文档
+heroText: 解析文档
 heroImage: "/logo.jpg"
 actionText: 关于 →
 actionLink: /interview/
